@@ -1,0 +1,138 @@
+{% extends "layouts/base.twig" %}
+
+{% set page = post.get_field('json_data')|json_decode %}
+
+{% block content %}
+	<section class="container simple mt-32 lg:mt-48 mb-16 mx-auto lg:flex">
+		<div class="w-full lg:w-1/2 lg:mr-48">
+			<h1 class="text-white flex flex-col lg:block">
+				<p class="inline-block bg-purple px-4">{{page.header.title[0]}}</p>
+				<p class="inline-block bg-purple px-4 mt-2">{{page.header.title[1]}}</p>
+			</h1>
+			<p class="text-white text-2xl mt-6">{{page.header.subtitle}}
+			</p>
+			{% for item in page.header.links %}
+				<div class="flex {{loop.index == 1 ? 'mt-8' : ''}}">
+					<a href="{{item.link}}" class="font-header text-2xl text-white mr-4 no-underline hover:underline">{{item.text}}</a>
+					<img src="{{assetPath('images/icon-arrow-white.svg')}}">
+				</div>
+			{% endfor %}
+		</div>
+		<div class="relative hidden lg:block w-full lg:w-1/2 lg:mx-0">
+			<div class="js-sol-video js-sol-video-home max-w-5xl mx-auto">
+				<iframe class="video-iframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-src="https://www.youtube.com/embed/{{page.header.video.id}}?autoplay=1" frameborder="0"></iframe>
+				<div class="js-sol-video-container relative">
+					<div>
+						<div class="video-gradient--center"></div>
+						<img class="object-cover w-full h-full" src="{{page.header.video.poster}}" alt="">
+					</div>
+					<div class="absolute bottom-0 right-0 mb-16 mr-16">
+						<button class="js-video btn btn-primary btn-icon flex items-center">{{page.header.video.cta}}
+							<img class="ml-6" src="{{assetPath('images/icon-play.svg')}}">
+							<img class="ml-6 hidden" src="{{assetPath('images/icon-play-black.svg')}}">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="h-10 gradient-primary"></div>
+
+	<section class="simple pt-20 overflow-hidden pb-0 bg-white">
+		<div class="container mx-auto">
+			<div class="px-4 md:px-24">
+				<h3 class="text-purple text-center">{{page.cards.subtitle}}</h3>
+				<h2 class="mt-4 text-center px-8">{{page.cards.title}}
+				</h2>
+			</div>
+		</div>
+		<div class="relative">
+			<div class="container mx-auto relative flex flex-col-reverse md:flex-row-reverse items-center pt-24 z-20">
+				<div class="w-full lg:w-1/2">
+					{% for item in page.cards.items %}
+						{% if loop.index == 3 %}
+						</div>
+						<div class="w-full lg:w-1/2 mb-16 lg:mb-0 lg:flex lg:justify-end">
+						{% endif %}
+						<div class="max-w-2xl md:rounded-xl shadow-2xl bg-white {{loop.index > 2 ? 'md:mr-8' : 'md:ml-8 mb-16'}}">
+							<div class="pt-16 px-12 pb-12">
+								<img class="" src="{{assetPath("images/#{item.product}-logo.svg")}}"/>
+								<h3 class="mt-8">
+									{{item.title}}</h3>
+								<p class="text-2xl mt-6">{{item.subtitle}}</p>
+								{% for tick in item.ticks %}
+									<div class="flex {{loop.index == 1 ? 'mt-8' : ''}}">
+										<img class="mr-4" src="{{assetPath("images/tick-icon-black.svg")}}">
+										<p class="text-xl mt-2">
+											{{tick}}
+										</p>
+									</div>
+								{% endfor %}
+							</div>
+							<div class="flex h-20">
+								<a href="{{item.cta.link}}" class="relative w-full flex font-header text-xl no-underline btn-gradient">
+									<span class="self-center mr-4 pl-12 relative z-10">{{item.cta.text}}</span>
+									<img class="arrow-first relative z-10" src="{{assetPath('images/icon-arrow.svg')}}">
+									<img class="relative z-10" src="{{assetPath('images/icon-arrow-white.svg')}}">
+									<span class="gradient-{{item.product}} absolute w-full h-full z-0"></span>
+								</a>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+			<img class="absolute w-full h-full xl:h-auto top-0 object-cover z-0" src="{{assetPath('images/waves-lg.svg')}}">
+		</div>
+	</div>
+</section>
+
+<section class="simple py-4 md:py-16 text-center">
+	<h2 class="text-white">
+		{{page.clients.title}}
+	</h2>
+	<div class="container mx-auto">
+		<ul class="js-clients inline-flex flex-wrap md:flex-no-wrap justify-center md:mt-8">
+			<script>
+				var App = App || {};
+App.clients = {{ page.clients.items|json_encode }};
+			</script>
+			<li class="js-clients-item px-2">
+				<img class="p-2 object-contain w-32 md:w-auto">
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="sector bg-white text-center">
+	<h2 data-text-change="{{page.sectors.title.on_click}}">
+		{{page.sectors.title.default}}
+	</h2>
+	<div class="sector-grid mx-auto mt-32">
+		<div class="sector-grid_odd-row">
+			{% for sector in page.sectors.items.first_row %}
+				{% include "components/sectors.twig" with {row: 1} %}
+			{% endfor %}
+		</div>
+		<div class="sector-grid_even-row">
+			{% for sector in page.sectors.items.second_row %}
+				{% include "components/sectors.twig" with {row: 2} %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="simple text-center bg-white pt-16">
+	<h2 class="max-w-4xl text-black mx-auto">
+		{{page.advantages.title}}
+	</h2>
+	<div class="h-full pt-24 mt-16">
+		{% include "components/advantages.twig" with {advantages: page.advantages.items} %}
+	</div>
+</section>
+
+<section class="relative simple flex justify-center items-center bg-white overflow-hidden py-32 gradient-primary">
+	<div class="mx-4">
+		{% include "components/cta.twig" with {cta: page.cta} %}
+	</div>
+</section>{% endblock %}

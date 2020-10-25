@@ -1,0 +1,9 @@
+{# <div class="menu-gradient opacity-0"></div> #}
+<header class="absolute w-full flex top-0 pt-8 z-50">
+	<a class="hidden sm:block w-64 ml-16 -mt-2" href="{{base_path}}" rel="home">
+		{% set logoType = theme == 'light' ? '-black' : '' %}
+		{% set logoType = theme == 'white' ? '-white' : logoType %}
+		<img src="{{assetPath("images/logo-easygoband#{logoType}.svg")}}" alt="Easygoband"/>
+	</a>
+	{% include 'components/main-nav.twig' %}
+</header>

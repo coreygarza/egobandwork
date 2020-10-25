@@ -1,0 +1,97 @@
+{% set countries = {
+    es: ['España', 'México', 'Argentina', 'Ecuador', 'Tailandia', 'Rep. Dominicana', 'Colombia'],
+    en: ['Spain', 'Mexico', 'Argentina', 'Ecuador', 'Thailand', 'Dominican Republic', 'Colombia']
+  }
+%}
+{% set rights = {
+    es: 'Todos los derechos reservados',
+    en: 'All rights reserved',
+  }
+%}
+{% set policies = {
+    es: {
+      privacy: {
+        'text': 'Política de privacidad',
+        'link': '/politica-de-privacidad'
+      },
+      cookies: {
+        'text': 'Política de cookies',
+        'link': '/politica-de-cookies'
+      },
+      sales: {
+        'text': 'Política de ventas',
+        'link': '/politica-de-ventas'
+      }
+    },
+    en: {
+      privacy: {
+        'text': 'Privacy policy',
+        'link': '/privacy-policy'
+      },
+      cookies: {
+        'text': 'Cookies policy',
+        'link': '/cookies-policy'
+      },
+      sales: {
+        'text': 'Sales policy',
+        'link': '/sales-policy'
+      }
+    }
+  }
+%}
+{% set policies = policies[lang] %}
+
+<footer>
+	<div class="relative overflow-hidden pt-8 pb-16">
+		<div class="mx-auto text-center">
+			<a class="relative inline-block z-10" href="{{base_path}}" rel="home">
+				<img class="h-18" src="{{assetPath('images/logo-easygoband.svg')}}" alt="Easygoband"/>
+			</a>
+		</div>
+		<ul class="w-3/4 flex flex-wrap justify-center relative z-10 flex-wrap mx-auto text-center">
+			{% for country in countries[lang] %}
+				<li class="text-white w-full md:w-1/3 pt-12">
+					<p class="uppercase font-header">{{country}}</p>
+					<a class="js-contact no-underline hover:underline mt-2"></a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="bg-white py-8">
+		<div class="flex flex-wrap text-center md:text-left justify-center md:justify-start mx-auto max-w-4xl">
+			<div class="flex flex-col justify-center items-center md:items-start">
+				<div class="flex">
+					<a class="mr-6" href="https://www.facebook.com/easygoband" target="_blank">
+						<img src="{{assetPath('images/sn-facebook.svg')}}"/>
+					</a>
+					<a class="mr-6" href="https://www.instagram.com/easygoband/" target="_blank">
+						<img src="{{assetPath('images/sn-instagram.svg')}}"/>
+					</a>
+					<a href="https://www.linkedin.com/company/11270892/" target="_blank">
+						<img src="{{assetPath('images/sn-linkedin.svg')}}"/>
+					</a>
+				</div>
+				<p class="font-header text-xl mt-4">Easygoband world SL</p>
+				<p class="mt-1">CEEI Castellón, Ronda Circunvalación, 188,<br>12003 Castellón de la Plana.
+					{{lang == 'en' ? 'Spain' : 'España'}}</p>
+			</div>
+			<div class="flex flex-wrap md:ml-auto justify-center md:justify-start mt-8 md:mt-0">
+				<img class="w-32 h-logos-footer mr-6 object-contain" src="{{assetPath('images/enisa.png')}}"/>
+				<img class="w-32 h-logos-footer mr-6 object-contain" src="{{assetPath('images/icex.jpg')}}"/>
+				<img class="w-32 h-logos-footer mr-6 object-contain" src="{{assetPath("images/pyme_innovadora_meic-#{lang|upper}_web.jpg")}}">
+				<a class="block" href="/cdti"><img class="w-32 h-logos-footer object-contain" src="{{assetPath('images/cdti.png')}}"/></a>
+			</div>
+		</div>
+	</div>
+	<div>
+		<p class="text-white text-center py-6">Copyright ©
+			{{'now'|date('Y')}}
+			Easygoband World SL |
+			{{rights[lang]}}
+			{% for policy in policies %}
+				|
+				<a class="no-underline hover:underline" href="{{policy.link}}">{{policy.text}}</a>
+			{% endfor %}
+		</p>
+	</div>
+</footer>

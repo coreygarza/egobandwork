@@ -1,0 +1,46 @@
+{% extends "layouts/base.twig" %}
+
+{% set page = post.get_field('json_data')|json_decode %}
+
+{% block content %}
+	<section class="relative">
+		<div class="relative container text-white mx-auto z-10">
+			<h1 class="text-center text-white md:pt-16">{{page.title}}</h1>
+		</div>
+		<img class="absolute w-full h-full object-cover top-0" src="{{page.img}}">
+	</section>
+	<section class="bg-white simple">
+		<div class="relative max-w-6xl mx-auto">
+			<div class="team">
+				{% for member in page.team %}
+					<div class="js-team-item team-item team-item-{{loop.index}} z-10">
+						<img class="{{member.class ? member.class : ''}}" src="{{member.image}}"/>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="team-back">
+				{% for member in page.team %}
+					<div class="js-team-item team-item team-item-{{loop.index}} hidden">
+						<div class="team-content">
+							<h2 class="font-header text-left text-white">{{member.name}}</h2>
+							<div class="flex">
+								<h3 class="font-header text-xl text-white mt-2 mr-4">{{member.role}}</h3>
+								{# <a class="w-8 h-8 inline-block mt-2" href="{{member.linkedin}}">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <img src="{{assetPath('images/sn-linkedin-white.svg')}}"/>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </a> #}
+							</div>
+							<p class="font-header text-xl text-white mt-4">{{member.content}}</p>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white simple">
+		<h2 class="text-center md:pt-32">{{page.careers}}</h1>
+		<div class="max-w-4xl mx-auto pt-16 pb-32">
+			{{ function('do_shortcode', "[contact-form-7 title='#{post.slug|capitalize}']") }}
+		</div>
+	</section>
+{% endblock %}
