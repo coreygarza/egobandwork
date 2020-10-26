@@ -43,7 +43,8 @@ class Site extends \Timber\Site {
 		$post = Timber::get_post();
 
         $context['lang'] = explode('_', get_locale())[0];
-        $context['base_path'] = $context['lang'] === 'en' ? '/en' : '/';
+		$context['base_path'] = $context['lang'] === 'en' ? '/en' : '/';
+		$context['base_url'] = 'http://localhost/corporativa2020/wp';
         $menu_lang_selector = $context['lang'] === 'en' ? 'En' : '';
 		$context['main_nav'] = new \Timber\Menu("Main$menu_lang_selector");
 		$context['sec_nav'] = new \Timber\Menu("Secondary$menu_lang_selector");

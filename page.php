@@ -24,7 +24,8 @@ $context = \Timber\Timber::get_context();
 $enPostName = [
     'team' => 'equipo',
     'contact' => 'contacto',
-    'news' => 'noticias'
+    'news' => 'noticias',
+    'goguest-platform' => 'plataforma-goguest'
 ];
 $postName = $lang == 'en' ? $enPostName[$post->post_name] : $post->post_name;
 

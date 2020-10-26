@@ -1,0 +1,14 @@
+{% extends "layouts/base.twig" %}
+
+{% set page = post.get_field('json_data')|json_decode %}
+
+{% block content %}
+    <div class="">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <h1>Test goguest platform</h1>        
+            </div>
+        </div>
+    </div>
+	
+{% endblock %}
