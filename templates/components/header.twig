@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header {{theme != 'light' ? 'white_header' : 'light_header'}}">
 	<div class="header_top bg_blue py-3">
 		<div class="container">
 			<ul class="mb-0 d-flex align-items-center justify-content-end">
@@ -14,9 +14,9 @@
 			<div class="row d-flex align-items-center justify-content-between">
 				<nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center">
 					<a class="logo" href="{{base_path}}">
-						{% set logoType = theme == 'light' ? '-black' : '' %}
+						{% set logoType = theme == 'light' ? '-white' : '-dark' %}
 						{% set logoType = theme == 'white' ? '-white' : logoType %}
-						<img src="{{assetPath("images/home_img/logo.png")}}" alt="Easygoband"/>
+						<img src="{{assetPath("images/home_img/logo#{logoType}.png")}}" alt="Easygoband"/>
 					</a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 						<span class="navbar-toggler-icon"></span>

@@ -37,6 +37,27 @@ a.nav-link {
     width: 23px;
     margin-right: 7px;
 }
+.light_header .header_main {
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+}
+.light_header li.mb-0>a.nav-link {
+    color: #fff !important;
+}
+.light_header .btn_lang a {
+    color: #fff;
+}
+.py-15{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.py-22{
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+}
+
+
 .goguest_app{
 	background-color: #00002C;
 }
@@ -84,7 +105,8 @@ a.nav-link {
 .overlay_content p {
     margin-bottom: 11px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    font-size: 15px;
 }
 .overlay_content p img {
     margin-right: 3px;
@@ -119,14 +141,15 @@ a.nav-link {
 
 .pointer_item p {
     min-height: 55px;
-    line-height: 15px;
+    line-height: 19px;
     margin-bottom: 0;
     padding-top: 13px;
+    font-size: 14px;
 }
 
 .goguest_app p {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .goguest_app p img {
     margin-right: 3px;
@@ -146,15 +169,14 @@ a.nav-link {
     position: absolute !important;
 }
 .header_main .navbar{
-    background-color: #fff;
     width: 100%;
 }
 .btn_booknow a {
-    color: #fff;
+    color: #fff !important;
     background-color: #1F17BB;
     padding: 7px 21px;
     border-radius: 2px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .btn_lang a {
     color: #000;
@@ -178,6 +200,23 @@ a.btn_blue:hover {
     box-shadow: transparent -0.5rem 0.5rem 0 0;
     color: #241dba;
 }
+.btn_dark_blue{
+    background-color: #000230;
+    box-shadow: #eae9fc -0.5rem 0.5rem 0 0;
+    font-size: 18px;
+    padding: 1.3rem 3rem;
+    position: relative;
+    font-family: 'Gilroy-ExtraBold';
+    color: #fff;
+    text-decoration: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+}
+a.btn_dark_blue:hover {
+    background-color: #eae9fc;
+    box-shadow: transparent -0.5rem 0.5rem 0 0;
+    color: #241dba;
+}
 
 
 // p goguest page
@@ -194,13 +233,20 @@ a.btn_blue:hover {
     bottom: 0;
     height: 100%;
 }
-.py-15{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
+
 .img_goguest {
     position: absolute;
     top: -241px;
+}
+.check_lists p {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+}
+.check_lists img {
+    margin-right: 5px !important;
+    margin-left: 0 !important;
+    margin-bottom: 6px !important;
 }
 
 
@@ -214,6 +260,9 @@ a.btn_blue:hover {
 }
 .bg-grey {
     background-color: #F2F2F4 !important;
+}
+.bg-light-grey {
+    background-color: #F3F2FB !important;
 }
 .footer_menu a {
     color: #000230;
@@ -235,6 +284,109 @@ a.btn_blue:hover {
 .text_blue{
     color:#000230;
 }
+
+
+
+//video
+
+$color-button:       #241dba52;
+$color-button-hover: #f00;
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  &43 {
+    padding-top: 75%;
+  } 
+  &169 {
+    padding-top: 56%;
+  } 
+}
+.videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  text-indent: -999em;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border: 5px solid $color-button;
+    border-radius: 100%;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+    background: #241dba;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 51.8%;
+    left: 50.3%;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0 -10px;
+    border-left: 24px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  &:hover,
+  &:focus {
+    &:before {
+      border-color: #6761f9;
+    }
+    &:after {
+      border-left-color: #fff;
+    }
+  }
+  .videoWrapperActive & {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
+}
+
+// slick slider
 
 
 
@@ -271,6 +423,14 @@ a.btn_blue:hover {
     .py-15 {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+    .py-22{
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+    }
+    .text-center img {
+        margin: auto;
+        margin-bottom: 2rem;
     }
 }
 

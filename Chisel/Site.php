@@ -52,7 +52,7 @@ class Site extends \Timber\Site {
         // Theme
         $parent = get_page($post->post_parent);
         $parent->post_name;
-        $context['theme']  = in_array($parent->post_name, array('caja', 'carrito', 'politica-de-privacidad', 'politica-de-cookies', 'politica-de-ventas', 'cart', 'checkout', 'privacy-policy', 'cookies-policy', 'sales-policy', 'cdti')) ? 'light' : 'dark';
+        $context['theme']  = in_array($parent->post_name, array('caja', 'carrito', 'politica-de-privacidad', 'politica-de-cookies', 'politica-de-ventas', 'cart', 'checkout', 'privacy-policy', 'cookies-policy', 'sales-policy', 'cdti','solutions','soluciones')) ? 'light' : 'dark';
         $context['theme'] = is_page(['inicio', 'home']) ? 'color' : $context['theme'];
         $context['no_nav'] = is_page(['soporte', 'support']);
 
