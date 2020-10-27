@@ -3,7 +3,7 @@
 {% set page = post.get_field('json_data')|json_decode %}
 
 {% block content %}
-    <div class="bg_solusion py-22" style="background-image:url({{assetPath('images/hotels/hoteles_resorts_cashless_contactless.jpg')}});">
+    <div class="bg_solusion py-22" style="background-image:url({{assetPath('images/hotels/bg_head_hotels.svg')}});background-size: cover;">
         <div class="container-fluid px-0">
             <div class="row mx-0 align-items-center">
                 <div class="col-md-12 px-5 py-5 text-center text-white mx-650 mx-auto">
@@ -46,7 +46,7 @@
                 <div class="col-md-12  py-3 text-center text-white">
                     <small >CUSTOMER JOURNEY</small><br>
                     <h1 class="py-3">Experiencia del huésped desde el<br> check-in hasta el check-out</h1>
-                    <img class="mx-auto w-100 my-5" src="{{assetPath('images/hotels/experiencia_huesped_hotel_restort_cashless_contactless_check-in.png')}}">
+                    <img class="mx-auto w-100 my-5" src="{{assetPath('images/hotels/experiencia_huesped_hotel_restort_cashless_contactless_check-in.svg')}}">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Pagos cashless</h1>
                     <p class="text_blue">Podrás crear diferentes grupos de precios y tus clientes podrán realizar pagos cashless, de forma rápida y segura.</p>
-                    <div class="check_lists">
+                    <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Cargo a la habitación o tokenización</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Pago por cortesías o puntos</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Diferentes grupos de precios según requisitos</p>
@@ -92,7 +92,7 @@
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Control de accesos</h1>
                     <p class="text_blue">Permite el acceso a las distintas áreas incluídas en su reserva mediante wearables/móvil, o habilita el pago directo en caso de no haberlo contratado.</p>
-                    <div class="check_lists">
+                    <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Habilita accesos según categoría de huésped</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Control de afluencias</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Apertura de puertas y tornos</p>
@@ -112,7 +112,7 @@
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Control interno</h1>
                     <p class="text_blue">Controla las entradas y salidas de material prestado a los huéspedes, evita robos y aumenta la eficiencia.</p>
-                    <div class="check_lists">
+                    <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Préstamo de objetos</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Stock de wearables (pulseras, tarjetas, etc)</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Gestión de toallas</p>
@@ -132,7 +132,7 @@
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Business Intelligence</h1>
                     <p class="text_blue">La actividad de los huéspedes queda registrada, podrás reducir costes y aumentar beneficios.</p>
-                    <div class="check_lists">
+                    <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Identificación individual de cada usuario</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Generación de reportes y métricas</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Hábitos de consumo y perfil de usuario</p>
@@ -155,15 +155,15 @@
         </div>
     </div>
 
-    <div class="goguest_app my-5">
+    <div class="goguest_app mt-5">
     <div class="row mx-0 align-items-center">
-        <div class="col-md-7 text-center" style="min-height: 401px;">
+        <div class="col-md-5 text-center" style="min-height: 401px;">
             <div style="overflow: hidden;width: 100%;height: 300px;position: relative;">
                 <div class="bg_ef"></div>
             </div>
-            <img src="{{assetPath('images/home_img/goguest-phone-2.png')}}" class="goguest_app_img">
+            <img src="{{assetPath('images/home_img/goguest-phone-2.svg')}}" class="goguest_app_img">
         </div>
-        <div class="col-md-5 text-white px-5 py-5">
+        <div class="col-md-6 text-white px-5 py-5 mx-650">
             <h1>Goguest App</h1>
             <p><b>El huésped podrá gestionar su estancia en cualquier momento</b></p>
             <p><img src="{{assetPath('images/home_img/tick_white.png')}}"> Enlaza Goguest APP con la App de tu hotel y sin integraciones.</p>
@@ -274,15 +274,15 @@
             </div>
             <div class="row my-5 justify-content-center">
                 <div class="col-md-4 text-center text-white">
-                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_1.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_1.svg')}}">
                     <p>Sistema centralizado de comunicación entre todos los servicios y softwares de tu negocio.</p>
                 </div>
                 <div class="col-md-4 text-center text-white">
-                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_2.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_2.svg')}}">
                     <p>Con nuestro panel vinculado a tu PMS podrás controlar y gestionar todo tu hotel.</p>
                 </div>
                 <div class="col-md-4 text-center text-white">
-                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_3.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_3.svg')}}">
                     <p>Desarrollamos e integramos dentro del sistema cualquier tipo de solución que necesites.</p>
                 </div>
             </div>
@@ -319,32 +319,32 @@
             </div>
             <div class="row my-5 justify-content-center text_blue">
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-1.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-1.svg')}}">
                     <h4>Mejora las operativas</h4>
                     <p>Los procesos de tu negocio serán más eficientes, mejorarás las operativas y ganarás tiempo.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-2.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-2.svg')}}">
                     <h4>Mayor rentabilidad</h4>
                     <p>Aumentarás ingresos, reducirás los gastos y promoverás el consumo.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-3.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-3.svg')}}">
                     <h4>Más seguridad</h4>
                     <p>Tendrás un control total y mayor seguridad para tus clientes y negocio.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-4.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-4.svg')}}">
                     <h4>Todo bajo control</h4>
                     <p>Conocerás los movimientos de tus clientes y podrás tomar decisiones estratégicas basadas en datos reales.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-5.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-5.svg')}}">
                     <h4>Sencillez y agilidad</h4>
                     <p>Disfrutarás de un sistema sencillo de usar y no necesitarás software adicional para operar tu hotel.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-6.png')}}">
+                    <img class="mx-auto mb-3" style="max-height: 81px;" src="{{assetPath('images/hotels/la-solucion-6.svg')}}">
                     <h4>Flexibilidad</h4>
                     <p>Podrás implementar nuevos softwares o crear nuevos desarrollos cuando lo necesites.</p>
                 </div>
@@ -358,7 +358,7 @@
                 <div class="col-md-6 px-0">
                     <div class="videoWrapper videoWrapper169 js-videoWrapper">
                         <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                        <button class="videoPoster js-videoPoster" style="background-image:url({{assetPath('images/hotels/video_poster.png')}});">Play video</button>
+                        <button class="videoPoster js-videoPoster" style="background-image:url({{assetPath('images/hotels/video_poster.svg')}});">Play video</button>
                     </div>
                 </div>
                 <div class="col-md-6 px-0 py-5 text-center">
@@ -403,6 +403,8 @@
                             <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-2" data-slide-to="1"></li>
                             <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="4"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
@@ -412,7 +414,7 @@
                                             <img class="mx-auto" src="{{assetPath('images/hotels/logo_pinerro.png')}}">
                                         </div>
                                         <div class="col-md-7">
-                                            <h4><blockquote>"En una semana se multiplicaron por 3 las reservas."</blockquote></h4>
+                                            <h4 style="font-size: 19px !important;"><blockquote>"En una semana se multiplicaron por 3 las reservas."</blockquote></h4>
                                         </div>
                                     </div>
                                     <div class="text-left">
@@ -425,15 +427,15 @@
                                 <div class="carousel-caption text_blue">
                                     <div class="row align-items-center">
                                         <div class="col-md-5">
-                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo_pinerro.png')}}">
+                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo-aquarama-color.jpg')}}"> 
                                         </div>
                                         <div class="col-md-7">
-                                            <h4><blockquote>"En una semana se multiplicaron por 3 las reservas."</blockquote></h4>
+                                            <h4 style="font-size: 19px !important;"><blockquote>"Easygoband nos permite relacionarnos de una forma diferente y mejorada con nuestros clientes."</blockquote></h4>
                                         </div>
                                     </div>
                                     <div class="text-left">
-                                    <p class="font-25 mb-0">TONI MUÑOZ</p>
-                                    <p>Director de Proyectos IT. Grupo Piñero.</p>
+                                    <p class="font-25 mb-0">DOLORES SALGADO</p>
+                                    <p>Directora</p>
                                     </div>
                                 </div>
                             </div>
@@ -441,15 +443,47 @@
                                 <div class="carousel-caption text_blue">
                                     <div class="row align-items-center">
                                         <div class="col-md-5">
-                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo_pinerro.png')}}">
+                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo-oasis-color.jpg')}}">
                                         </div>
-                                        <div class="col-md-7">
-                                            <h4><blockquote>"En una semana se multiplicaron por 3 las reservas."</blockquote></h4>
+                                        <div class="col-md-7"> 
+                                            <h4 style="font-size: 19px !important;"><blockquote>"Son super eficientes y honestos. Su tecnologia cashless es fantastic y el equipo te acompana durante todo el festival."</blockquote></h4>
                                         </div>
                                     </div>
                                     <div class="text-left">
-                                    <p class="font-25 mb-0">TONI MUÑOZ</p>
-                                    <p>Director de Proyectos IT. Grupo Piñero.</p>
+                                    <p class="font-25 mb-0">LAIA GORDI</p>
+                                    <p>Comunicacion Feslloc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption text_blue">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo-beerman-color.jpg')}}">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h4 style="font-size: 19px !important;"><blockquote>"La experiencia ha sido muy satisfactoria con un control al maximo y una excelente percepcion de los asistentes"</blockquote></h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-left">
+                                    <p class="font-25 mb-0">JUAN ZURITA</p>
+                                    <p>Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption text_blue">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <img class="mx-auto" src="{{assetPath('images/hotels/logo-aapolo-color.jpg')}}">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h4 style="font-size: 19px !important;"><blockquote>"Easygoband se ha vuelto indispensable para agilizar, aumentar nuestros ingresos en gran medida y tener un control exhaustivo de nuestro evento."</blockquote></h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-left">
+                                    <p class="font-25 mb-0">NICOLAS FILIPPINI</p>
+                                    <p>Gte de planeamiento y Control de Gestion</p>
                                     </div>
                                 </div>
                             </div>
@@ -498,7 +532,7 @@
         <div class="container text_blue">
             <div class="row my-5 justify-content-center align-items-center" style="border: 9px solid grey;min-height: 301px;">
                 <div class="col-md-7 relative">
-                    <img class="mx-auto img_goguest" src="{{assetPath('images/p_goguest/Goguest-demo-CTA.png')}}">
+                    <img class="mx-auto img_goguest" src="{{assetPath('images/p_goguest/Goguest-demo-CTA.svg')}}">
                 </div>
                 <div class="col-md-5 text-center">
                     <h4 class="text_blue mb-5">¿Te gustaría ver cómo tu negocio puede digitalizarse?</h4>
