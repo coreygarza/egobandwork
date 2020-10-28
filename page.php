@@ -25,7 +25,9 @@ $enPostName = [
     'team' => 'equipo',
     'contact' => 'contacto',
     'news' => 'noticias',
-    'goguest-platform' => 'plataforma-goguest'
+    'goguest-platform' => 'plataforma-goguest',
+    'faq' => 'faqs',
+    'plans' => 'planes'
 ];
 $postName = $lang == 'en' ? $enPostName[$post->post_name] : $post->post_name;
 

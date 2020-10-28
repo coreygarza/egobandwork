@@ -1,11 +1,8 @@
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url(../../assets/fonts/Gilroy-Bold.ttf);
-  }
-  @font-face {
-    font-family: 'Montserrat-Light';
-    src: url(../../assets/fonts/Montserrat-Light.ttf);
-  }
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1440px !important;
+}
+}
 
 p{
     font-size: 20px;
@@ -16,7 +13,8 @@ h1 {
     font-family: Gilroy-ExtraBold;
 }
 h2{
-	font-weight: 700 !important;
+    font-family: Gilroy-ExtraBold;
+    font-size: 37px !important;
 }
 h4{
     font-family: Gilroy-ExtraBold;
@@ -24,7 +22,8 @@ h4{
 }
 .font-25{
     font-size: 25px;
-    font-family: Gilroy-Bold;
+    font-family: GilroyBold;
+    color:#7E7C92;
 }
 li.navbar-item {
     display: flex;
@@ -423,11 +422,83 @@ $color-button-hover: #f00;
 
 
 
+//faq page
+.panel.panel-default {
+    border: 2px solid #d8d8d8;
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+.panel-body {
+    padding: 3%;
+}
+.panel-body p {
+    font-size: 17px;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .panel-default>.panel-heading a {
+    display: block;
+    padding: 10px 15px;
+    color: #000230;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    font-size: 31px;
+    font-weight: bold;
+    color: #1f17bb;
+  }
+  .panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #fff;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\2212";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\002b";
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+
 .foot_book{
     margin-top: 13rem;
 }
 .logo_review{
     min-height: 311px;
+}
+.btn-primary {
+    background-color: #1f17bb !important;
+    border-color: #1f17bb !important;
+}
+.btn-primary:hover {
+    color: #1f17bb !important;
+    background-color: #eae9fc !important;
+    border-color: #eae9fc !important;
 }
 
 
