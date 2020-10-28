@@ -3,12 +3,21 @@
 {% set page = post.get_field('json_data')|json_decode %}
 
 {% block content %}
-	<section class="relative">
-		<div class="relative container text-white mx-auto z-10">
-			<h1 class="text-center text-white md:pt-16">{{page.title}}</h1>
-		</div>
-		<img class="absolute w-full h-full object-cover top-0" src="{{page.img}}">
-	</section>
+	<div class="el_hub_goguest py-15">
+        <div class="bg_grey_right_70"></div>
+        <div class="container-fluid px-0">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img class="mx-auto w-100" src="{{assetPath('images/home_img/team_head.png')}}">
+                </div>
+                <div class="col-md-6 px-5 py-5 text-center text-md-left mx-650">
+                    <h1 class="text_blue">We are changing the way people enjoy </h1>
+                    <p class="font-25">Nuestra mision es hacer facil lo dificil, nuestra promesa es crear experiencias inmejorables para tus clientes y nuestra esencia es tecnologia y mucha imaginacion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 	<section class="bg-white simple">
 		<div class="relative max-w-6xl mx-auto">
 			<div class="team">
@@ -24,10 +33,7 @@
 						<div class="team-content">
 							<h2 class="font-header text-left text-white">{{member.name}}</h2>
 							<div class="flex">
-								<h3 class="font-header text-xl text-white mt-2 mr-4">{{member.role}}</h3>
-								{# <a class="w-8 h-8 inline-block mt-2" href="{{member.linkedin}}">
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <img src="{{assetPath('images/sn-linkedin-white.svg')}}"/>
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </a> #}
+								<h3 class="font-header text-xl text-white mt-2 mr-4">{{member.role}}</h3>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </a> #}
 							</div>
 							<p class="font-header text-xl text-white mt-4">{{member.content}}</p>
 						</div>

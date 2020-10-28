@@ -500,7 +500,21 @@ $color-button-hover: #f00;
     background-color: #eae9fc !important;
     border-color: #eae9fc !important;
 }
-
+.card {
+    height: 95%;
+}
+span.wpcf7-list-item{
+    display: contents !important;
+}
+.plan input{
+    height: 57px !important;
+}
+.plan_number input{
+    border-left: 2px solid #07b1d1;
+}
+.plan_email input{
+    border-left: 2px solid #ea8f9f;
+}
 
 @media (max-width: 767px){
     h1 {
