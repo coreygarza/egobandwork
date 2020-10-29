@@ -23,7 +23,8 @@ $enSolusionsName = [
     'theme-and-water-parks' => 'parques-tematicos',
     'music-festivals' => 'festivales-de-musica',
     'food-and-beverage-festivals' => 'eventos-gastronomicos',
-    'sporting-events' => 'recintos-deportivos'
+    'sporting-events' => 'recintos-deportivos',
+    'solutions-gofun' => 'solucion-gofun'
 ];
 $enSolusionsName = $lang == 'en' ? $enSolusionsName[$post->post_name] : $post->post_name;
 

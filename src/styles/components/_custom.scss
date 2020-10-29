@@ -102,7 +102,7 @@ a.nav-link {
 .overlay_content {
     background-color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: -37%;
     right: 0;
     width: calc(100% - 121px);
     padding: 2em 3em;
@@ -162,6 +162,7 @@ a.nav-link {
 
 .content_box{
     display: none;
+    position:relative;
 }
 .content_box>img {
     width: 100%;
@@ -553,7 +554,9 @@ span.wpcf7-list-item{
     padding: 3px 8px;
     border-radius: 50%;
 }
-
+.blog-entry h2{
+    font-size: 1.9rem !important;
+}
 
 
 
