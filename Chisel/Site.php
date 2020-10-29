@@ -44,7 +44,7 @@ class Site extends \Timber\Site {
 
         $context['lang'] = explode('_', get_locale())[0];
 		$context['base_path'] = $context['lang'] === 'en' ? '/en' : '/';
-		$context['base_url'] = 'http://localhost/corporativa2020/wp';
+		$context['base_url'] = 'https://www.easygoband.com';
         $menu_lang_selector = $context['lang'] === 'en' ? 'En' : '';
 		$context['main_nav'] = new \Timber\Menu("Main$menu_lang_selector");
 		$context['sec_nav'] = new \Timber\Menu("Secondary$menu_lang_selector");
