@@ -8,14 +8,14 @@
       "role": "CTO",
       "linkedin": "https://www.linkedin.com/in/christianbongardt/",
       "content": "He is a tech enthusiast with real passion for innovation and growth. He makes sure all our tech projects run smoothly and brings all the pieces together. From concept to creation Christian plays a vital role in every product we launch.",
-      "image": "/wp-content/uploads/2019/11/equipo_15.jpg"
+      "image": "https://www.easygoband.com/wp-content/uploads/2019/11/equipo_15.jpg"
     },
     {
       "name": "Lara Corral",
       "role": "Administrative Manager",
       "content": "She loves mothering her daughter, Flamenco dancing and when possible goes on a friends trip.<br><br>Lara oversees office operations, is in charge of invoicing, transaction of aids and subventions as well as coordinates business trips.",
       "linkedin": "https://www.linkedin.com/in/lara-corral-47a0ba24/",
-      "image": "/wp-content/uploads/2019/11/equipo_7.jpg"
+      "image": "{{assetPath('images/team/equipo_7.jpg')}}"
     },
     {
       "name": "Nagib Adum",

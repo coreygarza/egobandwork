@@ -25,7 +25,7 @@
     $height: 350px;
     display: grid;
     grid-template-columns: $width $width $width;
-    grid-template-rows: $height $height $height $height $height $height $height;
+    grid-template-rows: $height $height $height $height $height $height;
     position: relative;
     overflow: hidden;
   }

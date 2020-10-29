@@ -1,6 +1,7 @@
 import anime from 'animejs/lib/anime.es';
 
-const teamImgs = document.querySelectorAll('.team .js-team-item');
+// const teamImgs = document.querySelectorAll('.team .js-team-item');
+const teamImgs = document.querySelectorAll('.teamccc .js-team-itemccc');
 const teamContent = document.querySelectorAll('.team-back .js-team-item');
 const teamText = document.querySelectorAll('.team-content');
 const settings = {

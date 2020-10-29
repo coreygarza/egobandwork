@@ -1,6 +1,6 @@
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1440px !important;
+    max-width: 1240px !important;
 }
 }
 
@@ -515,6 +515,47 @@ span.wpcf7-list-item{
 .plan_email input{
     border-left: 2px solid #ea8f9f;
 }
+
+.profile img {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    border: 4px solid #000230;
+}
+.profile a {
+    color: #000230;
+    background-color: #fff;
+    padding: 3px 8.5px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid;
+    transform: translate(-50%, -50%);
+    bottom: -27%;
+}
+.team_info {
+    top: 0;
+    background-image: radial-gradient(transparent, #1f17bb);
+    bottom: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.team-item:hover .team_info{
+    display: flex;
+}
+.team_info a.social_linkedin {
+    color: #1f17bb;
+    font-size: 17px;
+    background-color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+}
+
+
+
 
 @media (max-width: 767px){
     h1 {
