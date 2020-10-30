@@ -1,6 +1,6 @@
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1240px !important;
+    max-width: 1221px !important;
 }
 }
 
@@ -40,6 +40,7 @@ a.nav-link {
     position: absolute;
     width: 100%;
     background-color: transparent !important;
+    z-index: 1;
 }
 .light_header li.mb-0>a.nav-link {
     color: #fff !important;
@@ -49,7 +50,13 @@ a.nav-link {
 }
 .py-15{
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
+}
+.pb-21{
+    padding-bottom: 11rem;
+}
+.pt-21 {
+    padding-top: 11rem !important;
 }
 .py-22{
     padding-top: 11rem;
@@ -401,16 +408,21 @@ $color-button-hover: #f00;
 }
 
 // carousel slider
-.slide {
+#carousel-example-2{
     height: 300px;
-    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 681px;
+    overflow: hidden;
     margin: auto;
 }
+
 .carousel-item {
     background-color: #ffffff;
     height: 300px;
+}
+.case_slider .carousel-item {
+    height: auto;
+    background-color: transparent;
 }
 .carousel-indicators li{
     background-color: #000 !important;
@@ -418,6 +430,16 @@ $color-button-hover: #f00;
 .carousel-caption{
     right: 10% !important;
     left: 10% !important;
+}
+.mb-custom-21 {
+    margin-bottom: 17rem;
+}
+.case_slider img {
+    height: 265px;
+}
+p.card-text {
+    min-height: 181px;
+    margin-bottom: 0;
 }
 
 
@@ -594,6 +616,55 @@ span.wpcf7-list-item{
 .service_item p {
     font-size: 15px;
 }
+.home_logo_review{
+    min-height: 481px;
+}
+.case_slider{
+    bottom: 291px;
+    z-index: 11;
+}
+.n_espanel {
+    color: #fff;
+    top: -16px;
+    font-size: 13px;
+    padding: 5px 13px;
+}
+.fal.fa-long-arrow-down {
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 3px 9px;
+}
+.home_faq a {
+    position: relative;
+    padding-left: 57px !important;
+}
+.home_faq a img {
+    position: absolute;
+    left: 11px;
+    width: 24px;
+}
+.home_faq a[aria-expanded=false]:after {
+    content: "\203A" !important;
+    transform: rotate(0deg) !important;
+}
+.home_faq a[aria-expanded=true]:after {
+    content: "\203A" !important;
+    transform: rotate(90deg) !important;
+}
+.h_box_1 {
+    top: -72px;
+}
+.h_box_2 {
+    bottom: -15%;
+    left: 27%;
+    z-index: 2;
+}
+.h_box_3 {
+    top: -51px;
+    right: -28px;
+}
+
 
 
 @media (max-width: 767px){
@@ -659,11 +730,27 @@ span.wpcf7-list-item{
     .slider .logos .fab {
         width: calc(100% / 4) !important;
     }
+    .case_slider .carousel-inner {
+        max-height: 457px;
+    }
+    p.card-text {
+        min-height: 181px;
+        margin-bottom: 0;
+    }
+    p.card-text {
+        font-size: 15px;
+    }
+    .case_slider img {
+        height: 225px;
+    }
 
 }
 
 @media (min-width: 768px){
     .mx-650{
         max-width: 651px !important;
+    }
+    .mx-500 {
+        max-width: 511px!important;
     }
 }

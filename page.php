@@ -20,6 +20,7 @@
 global $post;
 
 $context = \Timber\Timber::get_context();
+$context['posts'] = \Timber\Timber::get_posts();
 
 $enPostName = [
     'team' => 'equipo',
