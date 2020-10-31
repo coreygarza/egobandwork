@@ -3,7 +3,12 @@
     max-width: 1221px !important;
 }
 }
-
+body{
+    font-family: Lato-Regular;
+}
+a{
+    font-family: Gilroy-SemiBold;
+}
 p{
     font-size: 20px;
     font-family: Montserrat-Light;
@@ -24,10 +29,12 @@ h4{
     font-size: 25px;
     font-family: GilroyBold;
     color:#7E7C92;
+    line-height: 31px;
 }
 li.navbar-item {
     display: flex;
     align-items: center;
+    padding: 0 13px;
 }
 a.nav-link {
     white-space: nowrap;
@@ -40,13 +47,14 @@ a.nav-link {
     position: absolute;
     width: 100%;
     background-color: transparent !important;
-    z-index: 1;
+    z-index: 5;
 }
 .light_header li.mb-0>a.nav-link {
     color: #fff !important;
 }
 .light_header .btn_lang a {
     color: #fff;
+    font-size: 13px;
 }
 .py-15{
     padding-top: 6rem;
@@ -187,7 +195,7 @@ a.nav-link {
 .btn_booknow a {
     color: #fff !important;
     background-color: #1F17BB;
-    padding: 7px 21px;
+    padding: 9px 27px;
     border-radius: 2px;
     text-decoration: none !important;
 }
@@ -195,6 +203,7 @@ a.nav-link {
     color: #000;
     border: 1px solid;
     padding: 2px 7px;
+    font-size: 14px !important;
 }
 a.btn_blue {
     background-color: #241dba;
@@ -229,6 +238,9 @@ a.btn_dark_blue:hover {
     background-color: #eae9fc;
     box-shadow: transparent -0.5rem 0.5rem 0 0;
     color: #241dba;
+}
+.nav-tabs .nav-link{
+    color: #a2a2a2;
 }
 
 
@@ -272,6 +284,11 @@ a.btn_dark_blue:hover {
 // footer
 .copywrite p {
     font-size: 14px;
+    font-family: 'Lato-Regular';
+}
+.copywrite a {
+    color: #fff;
+    font-family: 'Lato-Regular';
 }
 .footer_logos img {
     max-width: 151px;
@@ -285,13 +302,12 @@ a.btn_dark_blue:hover {
 .footer_menu a {
     color: #000230;
     font-size: 16px;
+    font-family: Lato-Regular;
 }
 .footer_menu h5 {
     font-size: 19px;
     font-weight: 400 !important;
-}
-.copywrite a {
-    color: #fff;
+    font-family: GilroyBold;
 }
 .bg_blue{
     background-color: #000230;
@@ -373,6 +389,7 @@ $color-button-hover: #f00;
     -moz-transition: border-color 300ms;
     transition: border-color 300ms;
     background: #241dba;
+    border-color: #6761f9;
   }
   &:after {
     content: '';
@@ -392,7 +409,7 @@ $color-button-hover: #f00;
   &:hover,
   &:focus {
     &:before {
-      border-color: #6761f9;
+      border-color: #6661f900;
     }
     &:after {
       border-left-color: #fff;
@@ -469,10 +486,11 @@ p.card-text {
   }
   .panel-default>.panel-heading a {
     display: block;
-    padding: 10px 15px;
+    padding: 17px 15px;
     color: #000230;
     font-size: 18px;
     text-decoration: none;
+    font-family: 'Gilroy-SemiBold';
   }
   
   .panel-default>.panel-heading a:after {
@@ -638,11 +656,24 @@ span.wpcf7-list-item{
 .home_faq a {
     position: relative;
     padding-left: 57px !important;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 25px !important;
 }
 .home_faq a img {
     position: absolute;
     left: 11px;
     width: 24px;
+}
+h4.panel-title {
+    margin-bottom: 0 !important;
+}
+.home_faq .panel.panel-default {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #d8d8d8;
+}
+.home_faq .panel-heading {
+    background-color: transparent;
 }
 .home_faq a[aria-expanded=false]:after {
     content: "\203A" !important;
@@ -663,6 +694,29 @@ span.wpcf7-list-item{
 .h_box_3 {
     top: -51px;
     right: -28px;
+}
+
+.home_dropshadow:before {
+    content: "";
+    width: 100%;
+    height: 121px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #ffffff00, #000230);
+    z-index: 1;
+}
+.header_top a{
+    font-size: 14px;
+}
+.header_main a{
+    font-size: 18px;
+}
+.light_header .btn_booknow a {
+    background-color: #000230;
+}
+.home_faq h4.panel-title:hover a {
+    background-color: #fff;
 }
 
 
@@ -689,10 +743,12 @@ span.wpcf7-list-item{
     .btn_lang {
         margin-left: 0;
         margin-top: 5%;
+        padding-left: 13px;
     }
     .btn_booknow {
         margin-left: 0;
         margin-top: 3%;
+        padding-left: 13px;
     }
     .bg_grey_right_70{
         width:100%;
@@ -754,6 +810,9 @@ span.wpcf7-list-item{
     }
     .img_goguest {
         width: 97%;
+    }
+    li.dropdown {
+        padding: 0 13px;
     }
 
 }

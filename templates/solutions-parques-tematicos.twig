@@ -4,17 +4,17 @@
 
 {% block content %}
     <div class="bg_solusion py-22" style="background-image:url({{assetPath('images/parques/bg_header_parques.svg')}});background-size: cover;">
-        <div class="container-fluid px-0">
-            <div class="row mx-0 align-items-center">
-                <div class="col-md-12 px-5 py-5 text-center text-white mx-650 mx-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 px-5 py-5 text-center text-white mx-auto" style="max-width: 801px;">
                     <h1 class="">Parques temáticos</h1>
-                    <p class="mb-5">Goguest es una plataforma integradora que interactúa con tus sistemas de gestión actuales, TPV, tiqueteras, etc. Con el fin de potenciar su rendimiento, sacar el máximo partido al sistema, incrementar ingresos y ofrecer la mejor experiencia al visitante</p>
-                    <a class="btn_blue" href="#">{{ lang == 'en' ? 'View Case Study': 'Ver caso de estudio' }}</a>
+                    <p class="mb-5 font-25 text-white">Goguest es una plataforma integradora que interactúa con tus sistemas de gestión actuales, TPV, tiqueteras, etc. Con el fin de potenciar su rendimiento, sacar el máximo partido al sistema, incrementar ingresos y ofrecer la mejor experiencia al visitante</p>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div class="py-5">
+    <div class="py-5" style="box-shadow: 6px 7px 15px -7px #b3b3b3;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-4  text-center">
@@ -24,11 +24,11 @@
                     <div class="row align-items-center">
                         <div class="col-md-4 py-3 text-center">
                             <img class="mx-auto mb-3" style="max-width: 461px;" src="{{assetPath('images/header_icon/icon_hotel.svg')}}">
-                            <a href="{{ lang == 'en'? '/en/solutions/hotels-and-resorts':'/soluciones/hoteles-y-resorts'}}">{{ lang == 'en'? 'Hotels and resorts':'Hoteles y Resorts'}}</a>
+                            <a class="text_blue" href="{{ lang == 'en'? '/en/solutions/hotels-and-resorts':'/soluciones/hoteles-y-resorts'}}">{{ lang == 'en'? 'Hotels and resorts':'Hoteles y Resorts'}}</a>
                         </div>
                         <div class="col-md-4 py-3 text-center">
                             <img class="mx-auto mb-3" style="max-width: 461px;" src="{{assetPath('images/header_icon/icon_parques.svg')}}">
-                            <a href="{{ lang == 'en'? '/en/solutions/theme-and-water-parks':'/soluciones/parques-tematicos'}}">{{ lang == 'en'? 'Theme & Water Parks':'Parques Temáticos'}}</a>
+                            <a class="text_blue" href="{{ lang == 'en'? '/en/solutions/theme-and-water-parks':'/soluciones/parques-tematicos'}}">{{ lang == 'en'? 'Theme & Water Parks':'Parques Temáticos'}}</a>
                         </div>
                         <div class="col-md-4 py-3 text-center">
                             <a class="btn_blue" href="#">{{ lang == 'en' ? 'Ask For Budget': 'Pedir presupuesto' }}</a>
@@ -77,13 +77,13 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-12 px-5 py-5 text-center mx-650 mx-auto">
                     <h1 class="py-3">Todo conectado y bajo control, el visitante, los servicios y el recinto</h1>
-                    <p>Con un único dashboard podrás controlar la app del visitante, los accesos y las afluencias.</p>
+                    <p class="font-25">Con un único dashboard podrás controlar la app del visitante, los accesos y las afluencias.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row  align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Accesos y afluencias</h1>
-                    <p class="text_blue">Controlarás el acceso de cada visitante a las diferentes áreas dentro del parque y tendrás un control de las afluencias en tiempo real.</p>
+                    <p class="font-25">Controlarás el acceso de cada visitante a las diferentes áreas dentro del parque y tendrás un control de las afluencias en tiempo real.</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Habilita accesos según categoría de visitante</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Control de afluencias</p>
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row flex-md-row-reverse align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Soluciones Cashless</h1>
-                    <p class="text_blue">Nuestras soluciones cashless para parques aumentan el consumo y mejoran la seguridad</p>
+                    <p class="font-25">Nuestras soluciones cashless para parques aumentan el consumo y mejoran la seguridad</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Pagos por tokenización de tarjeta bancaria</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Pagos por puntos o cortesias</p>
@@ -123,7 +123,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row  align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Tiquetera</h1>
-                    <p class="text_blue">Consigue un control total con un sistema que además se integra con otras plataformas de ticketing</p>
+                    <p class="font-25">Consigue un control total con un sistema que además se integra con otras plataformas de ticketing</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> POS venta entradas en taquillas y kioscos</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Validación y activación de pulsera</p>
@@ -143,7 +143,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row flex-md-row-reverse align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -151,7 +151,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Business Intelligence</h1>
-                    <p class="text_blue">La actividad de los visitantes y trabajadores queda registrada, podrás reducir costes y aumentar beneficios</p>
+                    <p class="font-25">La actividad de los visitantes y trabajadores queda registrada, podrás reducir costes y aumentar beneficios</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Identificación individual de cada usuario</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Generación de reportes y métricas</p>
@@ -185,7 +185,7 @@
             </div>
             <div class="col-md-6 text-white px-5 py-5 mx-650">
                 <h1>APP del visitante</h1>
-                <p><b>El visitante podrá a través de la app gestionar su visita desde el móvil, antes o durante la visita. Esto le permitirá organizar mejor su dia y no perder el tiempo con colas.</b></p>
+                <p class="font-25">El visitante podrá a través de la app gestionar su visita desde el móvil, antes o durante la visita. Esto le permitirá organizar mejor su dia y no perder el tiempo con colas.</p>
             </div>
         </div>
     </div>
@@ -226,15 +226,15 @@
             <div class="row my-5 justify-content-center">
                 <div class="col-md-4 text-center text-white">
                     <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_1.svg')}}">
-                    <p>Sistema centralizado de comunicación entre todos los servicios y softwares de tu negocio.</p>
+                    <p class="font-25">Sistema centralizado de comunicación entre todos los servicios y softwares de tu negocio.</p>
                 </div>
                 <div class="col-md-4 text-center text-white">
                     <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_2.svg')}}">
-                    <p>Con nuestro panel vinculado a tu PMS podrás controlar y gestionar todo tu hotel.</p>
+                    <p  class="font-25">Con nuestro panel vinculado a tu PMS podrás controlar y gestionar todo tu hotel.</p>
                 </div>
                 <div class="col-md-4 text-center text-white">
                     <img class="mx-auto mb-3" style="max-height: 181px;" src="{{assetPath('images/hotels/icon_platforma_goguest_3.svg')}}">
-                    <p>Desarrollamos e integramos dentro del sistema cualquier tipo de solución que necesites.</p>
+                    <p  class="font-25">Desarrollamos e integramos dentro del sistema cualquier tipo de solución que necesites.</p>
                 </div>
             </div>
             <div class="py-5 text-center">
@@ -299,7 +299,7 @@
     <div class="py-15 ">
         <div class="container">
             <div  class="text-center mx-650 mx-auto">
-                <h1>La solución para hoteles que supera todas las expectativas</h1>
+                <h1 class="text_blue py-5">La solución para hoteles que supera todas las expectativas</h1>
             </div>
             <div class="row my-5 justify-content-center text_blue">
                 <div class="col-md-4 text-center">
@@ -347,7 +347,7 @@
                 </div>
                 <div class="col-md-6 px-0 py-5 text-center text-md-left mx-650 mx-auto">
                     <h1 class="text_blue">Aquarama</h1>
-                    <p class="mb-5">Transformacióm digital del recinto completo con el fin de tener mayor control del recinto, reducir el fraude y fomentar el consumo.</p>
+                    <p class="font-25 mb-5">Transformacióm digital del recinto completo con el fin de tener mayor control del recinto, reducir el fraude y fomentar el consumo.</p>
                     <a class="btn_blue" href="#">{{ lang == 'en' ? 'View Case Study': 'Ver caso de éxito' }}</a>
                 </div>
             </div>

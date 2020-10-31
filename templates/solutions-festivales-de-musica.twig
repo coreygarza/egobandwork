@@ -4,16 +4,16 @@
 
 {% block content %}
     <div class="bg_solusion py-22" style="background-image:url({{assetPath('images/festival/bg_head_festival.svg')}});background-size: cover;">
-        <div class="container-fluid px-0">
-            <div class="row mx-0 my-5 align-items-center">
-                <div class="col-md-12 px-5 py-5 text-center text-white mx-650 mx-auto">
+        <div class="container">
+            <div class="row my-5 align-items-center">
+                <div class="col-md-12 px-5 py-5 text-center text-white mx-auto" style="max-width: 801px;">
                     <h1 class="">Festivales de música</h1>
-                    <p class="mb-5">Gofun es una plataforma de Easygoband que ofrece soluciones que mejoran las operativas, disminuyen el fraude y aumentan los ingresos de los eventos mediante el uso de la tecnología NFC entre otros medios y recursos tecnológicos.</p>
+                    <p class="mb-5 font-25">Gofun es una plataforma de Easygoband que ofrece soluciones que mejoran las operativas, disminuyen el fraude y aumentan los ingresos de los eventos mediante el uso de la tecnología NFC entre otros medios y recursos tecnológicos.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="py-5">
+    <div class="py-5" style="box-shadow: 6px 7px 15px -7px #b3b3b3;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-3  text-center">
@@ -23,15 +23,15 @@
                     <div class="row align-items-center">
                         <div class="col-md-3 py-3 text-center">
                             <img class="mx-auto mb-3" style="max-width: 461px;" src="{{assetPath("images/header_icon/icon_festivales.svg")}}">
-                            <a href="{{ lang == 'en' ? '/en/solutions/music-festivals': '/soluciones/festivales-de-musica' }}">{{ lang == 'en'? 'Music festivals':'Festivales de música'}}</a>
+                            <a class="text_blue" href="{{ lang == 'en' ? '/en/solutions/music-festivals': '/soluciones/festivales-de-musica' }}">{{ lang == 'en'? 'Music festivals':'Festivales de música'}}</a>
                         </div>
                         <div class="col-md-3 py-3 text-center">
                             <img class="mx-auto mb-3" style="max-width: 461px;" src="{{assetPath("images/header_icon/Icon_eventos_gastronomicos.svg")}}">
-                            <a href="{{ lang == 'en' ? '/en/soluciones/food-and-beverage-festival': '/soluciones/eventos-gastronomicos' }}">{{ lang == 'en'? 'Food & Beverage festival':'Eventos Gastronómicos'}}</a>
+                            <a class="text_blue" href="{{ lang == 'en' ? '/en/soluciones/food-and-beverage-festival': '/soluciones/eventos-gastronomicos' }}">{{ lang == 'en'? 'Food & Beverage festival':'Eventos Gastronómicos'}}</a>
                         </div>
                         <div class="col-md-3 py-3 text-center">
                             <img class="mx-auto mb-3" style="max-width: 461px;" src="{{assetPath("images/header_icon/Icon_recintos_deportivos.svg")}}">
-                            <a href="{{ lang == 'en' ? '/en/soluciones/sporting-events': '/soluciones/recintos-deportivos' }}">{{ lang == 'en'? 'Sporting Events':'Recintos Deportivos'}}</a>
+                            <a class="text_blue" href="{{ lang == 'en' ? '/en/soluciones/sporting-events': '/soluciones/recintos-deportivos' }}">{{ lang == 'en'? 'Sporting Events':'Recintos Deportivos'}}</a>
                         </div>
                         <div class="col-md-3 py-3 text-center">
                             <a class="btn_blue" href="#">{{ lang == 'en' ? 'Ask For Budget': 'Pedir presupuesto' }}</a>
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row  align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Pagos Cashless</h1>
-                    <p class="text_blue">El entorno cashless permite mejorar la seguridad del recinto, reduce el coste cash handling y las posibles pérdidas o robos.</p>
+                    <p class="font-25">El entorno cashless permite mejorar la seguridad del recinto, reduce el coste cash handling y las posibles pérdidas o robos.</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Mejora la experiencia de usuario</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Aumenta el consumo entre 15-30%</p>
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row flex-md-row-reverse align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Control de accesos</h1>
-                    <p class="text_blue">Sistema de lectura rápida e intuitiva para el control de aforo y afluencias. Aumenta la seguridad de evento.</p>
+                    <p class="font-25">Sistema de lectura rápida e intuitiva para el control de aforo y afluencias. Aumenta la seguridad de evento.</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Control de aforo general y por zonas</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Estadísticas de acceso en tiempo real</p>
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row  align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Validación de entradas</h1>
-                    <p class="text_blue">La entrada quedará validada con un simple acercamiento del lector NFC al código de la misma.</p>
+                    <p class="font-25">La entrada quedará validada con un simple acercamiento del lector NFC al código de la misma.</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Estadísticas e informes y pulseras nominativas</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Posibilidad de integración con ticketeras</p>
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <div class="py-15">
+    <div class="py-5">
         <div class="container">
             <div class="row flex-md-row-reverse align-items-center justify-content-center">
                 <div class="col-md-6 bg-light-grey p-3">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-md-6 px-5 py-5 text-center text-md-left">
                     <h1 class="text_blue">Business Intelligence</h1>
-                    <p class="text_blue">La actividad de los asistentes y trabajadores queda registrada, podrás reducir costes y aumentar beneficios.</p>
+                    <p class="font-25">La actividad de los asistentes y trabajadores queda registrada, podrás reducir costes y aumentar beneficios.</p>
                     <div class="check_lists  text-left">
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Reportes y estadísticas en tiempo real</p>
                          <p><img src="{{assetPath('images/home_img/tick_dark.png')}}"> Control y gestión del staff</p>
@@ -151,8 +151,8 @@
                 <img src="{{assetPath('images/festival/left3_tab.svg')}}">
             </div>
             <div class="col-md-6 py-5 text-center text-md-left mx-650 w-100">
-                <h1>Tokeniza y monetiza</h1>
-                <p class="font-25">El visitante podrá vincular su tarjeta bancaria y hacer pagos directos y seguros en el parque.</p>
+                <h1 class="text_blue pb-5">Podrás contratar nuestros servicios y productos según tus necesidades</h1>
+                
                 <ul class="nav nav-tabs" id="myTab">
                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tabOne">LICENCIA</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabTwo">LLAVE EN MANO</a></li>
@@ -173,7 +173,7 @@
     <div class="py-15 ">
         <div class="container">
             <div  class="text-center mx-650 mx-auto">
-                <h1>La solución para eventos y festivales</h1>
+                <h1 class="text_blue py-5">La solución para eventos y festivales</h1>
             </div>
             <div class="row my-5 justify-content-center text_blue">
                 <div class="col-md-4 text-center">
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-md-6 px-0 py-5 text-center text-md-left mx-650 mx-auto">
                     <h1 class="text_blue">Rototom</h1>
-                    <p class="mb-5">Digitalización del control de accesos y pagos con el objetivo de mejorar la experiencia de los asistentes, reducir el fraude y las pérdidas de dinero en efectivo.</p>
+                    <p class="mb-5 font-25">Digitalización del control de accesos y pagos con el objetivo de mejorar la experiencia de los asistentes, reducir el fraude y las pérdidas de dinero en efectivo.</p>
                     <a class="btn_blue" href="#">{{ lang == 'en' ? 'View Case Study': 'Ver caso de éxito' }}</a>
                 </div>
             </div>
